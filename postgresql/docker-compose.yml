@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   db:
     image: postgres
@@ -6,12 +6,12 @@ services:
     volumes:
       - ./data/db:/var/lib/postgresql/data
     ports:
-      - 5432:5432  # make sure you don't have another container running on 5432
+      - 5432:5432 # make sure you don't have another container running on 5432
 
     environment:
-      - POSTGRES_DB=chaiDB
-      - POSTGRES_USER=chaiaurcode
-      - POSTGRES_PASSWORD=chaiaurcode
+      - POSTGRES_DB=postgres_db
+      - POSTGRES_USER=pulak_sarmah
+      - POSTGRES_PASSWORD=docker_postgres921
 
   adminer:
     image: adminer
